@@ -1,0 +1,42 @@
+<div>
+  <plotly-plot [data]="debt.data" [layout]="debt.layout" [useResizeHandler]="true"
+    [style]="{position: 'relative', width: '100%', height: '100%'}">
+  </plotly-plot>
+</div>
+
+<div style="display: flex; flex-direction: row;">
+  <div>
+    <plotly-plot [data]="population.data" [layout]="population.layout" [useResizeHandler]="true"
+      [style]="{position: 'static', width: '80%', height: '100%'}">
+    </plotly-plot>
+  </div>
+  <div>
+    <plotly-plot [data]="populationGrowth.data" [layout]="populationGrowth.layout" [useResizeHandler]="true"
+      [style]="{position: 'static', width: '80%', height: '100%'}">
+    </plotly-plot>
+  </div>
+  <div>
+    <plotly-plot [data]="genderComposition.data" [layout]="genderComposition.layout" [useResizeHandler]="true"
+      [style]="{position: 'static', width: '80%', height: '100%'}">
+    </plotly-plot>
+  </div>
+</div>
+
+<div style="display: flex; flex-direction: row; height: 100%;">
+  <div>
+    <plotly-plot [data]="youthVsRest.data" [layout]="youthVsRest.layout" [useResizeHandler]="true"
+      [style]="{position: 'relative', width: '80%', height: '100%'}">
+    </plotly-plot>
+  </div>
+  <div>
+    <plotly-plot [data]="registeredVoters.data" [layout]="registeredVoters.layout" [useResizeHandler]="true"
+      [style]="{position: 'relative', width: '80%', height: '100%'}">
+    </plotly-plot>
+  </div>
+  <div>
+    <plotly-plot [data]="households.data" [layout]="households.layout" [useResizeHandler]="true"
+      [style]="{position: 'relative', width: '80%', height: '100%'}">
+    </plotly-plot>
+    <!-- <div>There are currently over 12 million households in kenya</div> -->
+  </div>
+</div>
