@@ -1,10 +1,7 @@
-<div>
-  <plotly-plot [data]="debt.data" [layout]="debt.layout" [useResizeHandler]="true"
-    [style]="{position: 'relative', width: '100%', height: '100%'}">
-  </plotly-plot>
-</div>
-
+<h1 style="text-align: center;" class="title-font">Elections</h1>
+<hr>
 <div style="display: flex; flex-direction: row;">
+
   <div>
     <plotly-plot [data]="population.data" [layout]="population.layout" [useResizeHandler]="true"
       [style]="{position: 'static', width: '80%', height: '100%'}">
@@ -39,4 +36,19 @@
     </plotly-plot>
     <!-- <div>There are currently over 12 million households in kenya</div> -->
   </div>
+</div>
+
+<h1 style="text-align: center;" class="title-font">Financials</h1>
+<hr>
+<div style="display: flex; flex-direction: row;">
+  <div>
+    <plotly-plot [data]="debt.data" [layout]="debt.layout" [useResizeHandler]="true"
+      [style]="{position: 'relative', width: '100%', height: '100%'}">
+    </plotly-plot>
+  </div>
+</div>
+
+<div>
+  Links
+  <a href="https://www.centralbank.go.ke/public-debt/">Central Bank Kenya Public Debt</a>
 </div>
